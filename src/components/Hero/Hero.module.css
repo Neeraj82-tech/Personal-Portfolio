@@ -1,0 +1,373 @@
+
+
+@import "../../vars.css";
+
+/* Starry Background Effect Variables */
+:root {
+  --shadows-small: 1000px 150px #FFF, 1200px 300px #FFF, 500px 600px #FFF, 700px 700px #FFF, 1300px 1000px #FFF, 1100px 800px #FFF, 900px 900px #FFF;
+  --shadows-medium: 200px 200px #FFF, 300px 400px #FFF, 500px 700px #FFF, 600px 800px #FFF, 900px 1100px #FFF, 800px 1000px #FFF, 1000px 1200px #FFF;
+  --shadows-big: 100px 100px #FFF, 200px 200px #FFF, 300px 300px #FFF, 400px 400px #FFF, 500px 500px #FFF, 600px 600px #FFF, 700px 700px #FFF;
+}
+
+/* Background and Stars */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #d20209 0%, #ed0767 100%);
+}
+
+.stars{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.stars2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.stars3{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.stars {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: var(--shadows-small);
+  animation: animStar 100s linear infinite;
+}
+
+.stars:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: var(--shadows-small);
+}
+
+.stars2 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: var(--shadows-medium);
+  animation: animStar 150s linear infinite;
+}
+
+.stars2:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: var(--shadows-medium);
+}
+
+.stars3 {
+  width: 4px;
+  height: 4px;
+  background: transparent;
+  box-shadow: var(--shadows-big);
+  animation: animStar 200s linear infinite;
+}
+
+.stars3:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 4px;
+  height: 4px;
+  background: transparent;
+  box-shadow: var(--shadows-big);
+}
+
+.stars4 {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  box-shadow: var(--shadows-big);
+  animation: animStar 250s linear infinite;
+}
+
+.stars4:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  box-shadow: var(--shadows-big);
+}
+
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+/* Existing CSS */
+
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  margin: 70px;
+  z-index: 1;
+}
+
+.title {
+  font-size: clamp(70px, calc(70px + 5px), 90px);
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+  color: hsl(0, 0%, 95%);
+  user-select: none;
+}
+
+.wavingHand {
+  display: inline-block;
+  margin-right: 10px;
+  animation: wave 2s ease-in-out infinite;
+}
+
+.wavingHand img{
+  height: auto;
+  width: 100%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.splitChar {
+  font-weight: 200;
+  transition: 0.3s ease, color 0.1s ease;
+}
+
+.splitChar:hover {
+  font-weight: 900;
+  color: hsl(205, 77%, 72%);
+}
+
+
+.description {
+  font-size: 30px;
+  font-family: var(--font-roboto);
+  margin-bottom: 52px;
+
+}
+
+
+.contactBtn {
+  position: relative;
+  text-decoration: none;
+  background-color: #6a458b;
+  background: linear-gradient(45deg, #9c6ac3, transparent);
+
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 17px 26px;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.contactBtn svg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.contactBtn rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.contactBtn:hover {
+  background: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.contactBtn:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.resumeBtn {
+  position: relative;
+  text-decoration: none;
+  left: 220px;
+  bottom: 72px;
+  background-color: #6a458b;
+  background: linear-gradient(45deg, #9c6ac3, transparent);
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 17px 26px;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.resumeBtn svg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.resumeBtn rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.resumeBtn:hover {
+  background: transparent;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.resumeBtn:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.heroImg {
+  width: 20%;
+  z-index: 1;
+  border-radius: 50%;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  min-height: 350px;
+  top: -128px;
+  left: 10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 250px;
+  min-height: 250px;
+  top: 246px;
+  right: -9vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  .content {
+    align-items: center;
+    margin: 0px;
+    margin-top: 48px;
+  }
+
+  .resumeBtn{
+    left: 0px;
+    bottom: 0px;
+    margin-top: 20px;
+
+  }
+
+  .title {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 120%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .heroImg {
+    width: 50%;
+  }
+}

@@ -1,0 +1,39 @@
+[
+    {
+      "title": "HTML",
+      "imageSrc": "skills/html.png"
+    },
+    {
+      "title": "CSS",
+      "imageSrc": "skills/css.png"
+    },
+    {
+        "title": "TailWind",
+        "imageSrc": "skills/taillwind.png"
+    },
+    {
+        "title": "JavaScript",
+        "imageSrc": "skills/javascript.png"
+      },
+      {
+        "title": "BootStrap",
+        "imageSrc": "skills/bootstrap.png"
+      },
+    {
+      "title": "React",
+      "imageSrc": "skills/react.png"
+    },
+    {
+      "title": "Node",
+      "imageSrc": "skills/node.png"
+    },
+    {
+        "title": "ExpressJS",
+        "imageSrc": "skills/express.png"
+    },
+    {
+      "title": "POSTgreSQL",
+      "imageSrc": "skills/postgresql.png"
+    }
+  ]
+  

@@ -1,0 +1,10 @@
+[
+    {
+      "role": "Graduate Engineer",
+      "organisation": "Johnson Controls",
+      "startDate": "Jan, 2023",
+      "endDate": "Feb, 2024",
+      "experiences": ["Spearheaded software development initiatives integrating modern web technologies.","Proficient across a wide spectrum of web development technologies.", "Conducted in-depth User Audience Analysis.", "Reduced load times by 50%.", "Crafted visually appealing and responsive web interfaces.", "Increased system performance by 30% through the optimization of code and integration of efficient algorithms."],
+      "imageSrc": "history/company.png"
+    }
+  ]

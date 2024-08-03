@@ -1,0 +1,28 @@
+[
+    {
+      "title": "eCommerce Platform",
+      "imageSrc": "projects/ecoomerce3.webp",
+      "imageSrcMobile": "projects/ecommercemobile.png",
+      "description": "Developed a comprehensive eCommerce platform featuring user authentication, payment integration, and an admin management system; it may take a moment to load ⏳",
+      "skills": ["JavaScript", "React", "Redux", "Node,js", "MongoDB"],
+      "view": "https://e-commerce-proshop.onrender.com/"
+    },
+    {
+      "title": "Youtube Clone",
+      "imageSrc": "projects/youtube3.webp",
+      "imageSrcMobile": "projects/youtubemobile.png",
+      "description": "Developed a responsive YouTube Clone using React, and the YouTube Data API, with enhanced features like video playback, search, and recommendations",
+      "skills": ["Html", "JavaScript", "React", "Css", "API"],
+      "view": "https://youtubebyneeraj.netlify.app/"
+    },
+    {
+      "title": "Personal Portfolio",
+      "imageSrc": "projects/personal1.webp",
+      "imageSrcMobile": "projects/personalmobile.png",
+      "description": "Built a dynamic portfolio showcasing projects and skills using React, React Router and featuring interactive elements, smooth navigation, and responsive design.",
+      "skills": ["Html", "Css", "JavaScript", "React"],
+      "view": "https://neerajsainiportfolio.netlify.app/"
+    }
+
+  ]
+  
