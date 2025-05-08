@@ -4,11 +4,11 @@ import { getImageUrl } from '../../utils';
 
 export const Hero = () => {
   const title = "Hi, I'm Neeraj";
-  const description = "I'm a Full-Stack Developer with 1+ year of experience using React and NodeJS. Reach out if you like to learn more!";
+  const description = "I'm a Full-Stack Developer with 2+ year of experience using React and NodeJS. Reach out if you like to learn more!";
 
   const handleResumeClick = () => {
     // const url = '../../../assets/Neeraj-Saini-Developer-Resume.pdf';
-    const url = '..//..//..//assets//Neeraj-Saini-Developer-Resume.pdf'
+    const url = '..//..//..//assets//Neeraj-Saini-Developer-Re.pdf'
 
     // Open the file in a new tab
     window.open(url, '_blank');
